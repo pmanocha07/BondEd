@@ -4,7 +4,27 @@
 ## Overview
 BondEd connects students with alumni mentors, exclusive opportunities, forums, and events.
 
-/bonded-website │ ├── /css │ └── styles.css │ ├── /js │ └── scripts.js │ ├── /images │ └── (all image files) │ ├── /partials │ ├── header.html │ ├── footer.html │ ├── hero.html │ ├── features.html │ ├── directory.html │ ├── mentorship.html │ ├── opportunities.html │ ├── community.html │ ├── events.html │ ├── testimonials.html │ └── cta.html │ └── index.html
+## Project Structure
+/bonded-website
+├── /css
+│   └── styles.css
+├── /js
+│   └── scripts.js
+├── /images
+│   └── (all image files)
+├── /partials
+│   ├── header.html
+│   ├── footer.html
+│   ├── hero.html
+│   ├── features.html
+│   ├── directory.html
+│   ├── mentorship.html
+│   ├── opportunities.html
+│   ├── community.html
+│   ├── events.html
+│   ├── testimonials.html
+│   └── cta.html
+└── index.html
 
 ## Getting Started
 
