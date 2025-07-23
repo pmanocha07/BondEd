@@ -1,5 +1,19 @@
-# BondEd
-*Where Experience Meets Ambition*
+# BondEd - *Where Experience Meets Ambition*
+BondEd is a responsive, modern web platform designed to bridge the gap between industry veterans and aspiring learners. Built using HTML, Tailwind CSS, and JavaScript, this prototype creates a seamless interface for mentors to post opportunities and mentees to explore, connect, and collaborate.
+
+Whether it’s internships, collaborative projects, or one-on-one guidance, BondEd is tailored to make meaningful learning accessible—fostering mentorship, growth, and future-ready skills.
+
+🔹 Features:
+
+Clean UI with Tailwind utility classes for rapid development
+
+Sectioned layout with hero, mission, steps, team, and footer
+
+Font Awesome for slick icons
+
+Ready to scale with real backend and dynamic content
+
+This project is ideal as a base for a mentorship marketplace, a student-alumni portal, or any platform where knowledge sharing meets career growth.
 
 ## Overview
 BondEd connects students with alumni mentors, exclusive opportunities, forums, and events.
