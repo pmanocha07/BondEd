@@ -1,6 +1,4 @@
 # BondEd
-<<<<<<< HEAD
-
 *Where Experience Meets Ambition*
 
 ## Overview
@@ -12,8 +10,7 @@ BondEd connects students with alumni mentors, exclusive opportunities, forums, a
 3. *Serve locally*: npm run start
 
 ## Deployment
-- Host src/ on any static hosting (GitHub Pages, Netlify).
-- Ensure public/output.css is generated if using the CSS build script.
+
 
 ## CI/CD with GitHub Actions
 Create .github/workflows/ci.yml:
