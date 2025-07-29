@@ -1,0 +1,118 @@
+<div id="mentorship" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Smart Mentorship Matching</h2>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                Our AI-powered system suggests the best mentor matches based on your goals and interests.
+            </p>
+        </div>
+        <div class="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Find Your Ideal Mentor</h3>
+                    <form>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Your Career Interest</label>
+                                <select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md border">
+                                    <option>Software Development</option>
+                                    <option>Data Science</option>
+                                    <option>Product Management</option>
+                                    <option>UX/UI Design</option>
+                                    <option>DevOps</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Specific Technologies</label>
+                                <input type="text" class="mt-1 block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md p-2 border" placeholder="e.g., React, Python, AWS">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Mentorship Goals</label>
+                                <select multiple class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md border">
+                                    <option>Career Growth</option>
+                                    <option>Technical Skills</option>
+                                    <option>Interview Preparation</option>
+                                    <option>Networking</option>
+                                    <option>Project Feedback</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Preferred Meeting Frequency</label>
+                                <select class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md border">
+                                    <option>Weekly</option>
+                                    <option>Bi-weekly</option>
+                                    <option>Monthly</option>
+                                    <option>As needed</option>
+                                </select>
+                            </div>
+                            <div class="pt-2">
+                                <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Find Matches</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Your Top Matches</h3>
+                    <div class="space-y-4">
+                        <!-- Match 1 -->
+                        <div class="flex items-start p-3 hover:bg-gray-50 rounded-md cursor-pointer mentor-card transition-all duration-150 ease-in-out">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ea62c71b-dde8-48d3-8a60-3cd145f4e424.png" alt="Potential mentor Alex Wong, senior developer with friendly smile">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-sm font-medium text-gray-900">Alex Wong <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">95% Match</span></h4>
+                                <p class="text-sm text-gray-500">Lead Developer at CodeCraft</p>
+                                <div class="mt-1 flex flex-wrap gap-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">React</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Career Advice</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Interview Prep</span>
+                                </div>
+                                <div class="mt-2 flex justify-end">
+                                    <button class="text-indigo-600 text-sm font-medium hover:text-indigo-900">Request Session</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Match 2 -->
+                        <div class="flex items-start p-3 hover:bg-gray-50 rounded-md cursor-pointer mentor-card transition-all duration-150 ease-in-out">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/70633f3b-9d51-44ab-ba44-9eacf31774d2.png" alt="Potential mentor Jordan Smith, product manager in business attire">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-sm font-medium text-gray-900">Jordan Smith <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">87% Match</span></h4>
+                                <p class="text-sm text-gray-500">Senior Product Manager at BuildTech</p>
+                                <div class="mt-1 flex flex-wrap gap-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">Product Strategy</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">Roadmapping</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">User  Research</span>
+                                </div>
+                                <div class="mt-2 flex justify-end">
+                                    <button class="text-indigo-600 text-sm font-medium hover:text-indigo-900">Request Session</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Match 3 -->
+                        <div class="flex items-start p-3 hover:bg-gray-50 rounded-md cursor-pointer mentor-card transition-all duration-150 ease-in-out">
+                            <div class="flex-shrink-0">
+                                <img class="h-12 w-12 rounded-full" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5fa17f98-1b9a-409e-ab39-812025eaebf2.png" alt="Potential mentor Taylor Kim, data scientist in casual smart clothing">
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-sm font-medium text-gray-900">Taylor Kim <span class="ml-2 bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">82% Match</span></h4>
+                                <p class="text-sm text-gray-500">Data Science Lead at AnalyticsPro</p>
+                                <div class="mt-1 flex flex-wrap gap-1">
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">Machine Learning</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">Python</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">Model Deployment</span>
+                                </div>
+                                <div class="mt-2 flex justify-end">
+                                    <button class="text-indigo-600 text-sm font-medium hover:text-indigo-900">Request Session</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
