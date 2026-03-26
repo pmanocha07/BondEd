@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BondEd: Where Experience Meets Ambition</title>
+  <!-- <link href="./css/style.css" rel="stylesheet" /> -->
+   <!-- 1. Pull in Tailwind’s full library on‑the‑fly -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 2. (Optional) Extend your config so your custom CSS variables work as Tailwind colors -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          primary: '#4F46E5',
+          secondary: '#10B981',
+          dark: '#1F2937',
+          light: '#F3F4F6',
+        }
+      }
+    }
+  }
+</script>
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <img src="./images/logo.png" alt="BondEd logo" class="h-8 w-8" />
+            <span class="ml-2 text-xl font-bold text-indigo-600">BondEd</span>
+          </div>
+        </div>
+        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+          <a
+            href="#features"
+            class="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+            >Features</a
+          >
+          <a
+            href="#directory"
+            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+            >Directory</a
+          >
+          <a
+            href="#mentorship"
+            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+            >Mentorship</a
+          >
+          <a
+            href="#opportunities"
+            class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+            >Opportunities</a
+          >
+        </div>
+        <div class="flex items-center">
+          <button
+            class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700"
+          >
+            Sign In
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="gradient-bg text-white">
+    <div
+      class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center"
+    >
+      <h1
+        class="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl"
+      >
+        Where Experience Meets Ambition
+      </h1>
+      <p class="mt-6 max-w-3xl mx-auto text-xl">
+        Connect with alumni, find mentors, discover opportunities, and build your professional network within our technical education community.
+      </p>
+      <div class="mt-10 flex justify-center space-x-4">
+        <button
+          class="bg-white text-indigo-600 px-6 py-3 rounded-md text-lg font-medium hover:bg-gray-100"
+        >
+          Join as Student
+        </button>
+        <button
+          class="bg-indigo-700 text-white px-6 py-3 rounded-md text-lg font-medium hover:bg-indigo-800"
+        >
+          Join as Alumni
+        </button>
+      </div>
+      <img
+        src="./images/hero.png"
+        alt="Diverse group collaborating"
+        class="mt-12 rounded-lg shadow-xl mx-auto"
+      />
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div id="features" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+        Bridge the Gap Between Learning and Earning
+      </h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+        Our platform offers specialized features designed specifically for technical education communities.
+      </p>
+      <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Card 1 -->
+        <div class="pt-6">
+          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+            <div class="-mt-6 text-center">
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white mx-auto"
+              >
+                <i class="fas fa-user-friends text-xl"></i>
+              </div>
+              <h3 class="mt-4 text-lg font-medium text-gray-900">
+                Mentorship Network
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Get paired with alumni in your field for career guidance and technical advice.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="pt-6">
+          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+            <div class="-mt-6 text-center">
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white mx-auto"
+              >
+                <i class="fas fa-briefcase text-xl"></i>
+              </div>
+              <h3 class="mt-4 text-lg font-medium text-gray-900">
+                Exclusive Opportunities
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Access job postings, internships, and projects shared exclusively with our community.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="pt-6">
+          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+            <div class="-mt-6 text-center">
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto"
+              >
+                <i class="fas fa-comments text-xl"></i>
+              </div>
+              <h3 class="mt-4 text-lg font-medium text-gray-900">
+                Tech Forums
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Discuss trends, get code reviews, and solve technical challenges together.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="pt-6">
+          <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+            <div class="-mt-6 text-center">
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-yellow-500 text-white mx-auto"
+              >
+                <i class="fas fa-calendar-alt text-xl"></i>
+              </div>
+              <h3 class="mt-4 text-lg font-medium text-gray-900">
+                Industry Events
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Attend webinars, tech talks, and networking events with alumni professionals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alumni Directory Preview -->
+  <div id="directory" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center">
+        Alumni Directory
+      </h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto text-center">
+        Connect with graduates across industries and experience levels.
+      </p>
+      <div class="mt-12 bg-white shadow rounded-lg p-6">
+        <div class="flex flex-col sm:flex-row gap-4 mb-6">
+          <input
+            type="text"
+            placeholder="Search by name, company, or role"
+            class="flex-1 rounded-md border-gray-300 shadow-sm p-2 focus:border-indigo-500 focus:ring-indigo-500 border"
+          />
+          <select
+            class="flex-1 rounded-md border-gray-300 shadow-sm p-2 focus:border-indigo-500 focus:ring-indigo-500 border"
+          >
+            <option>All Industries</option>
+            <option>Software Engineering</option>
+            <option>Data Science</option>
+            <option>Product Management</option>
+            <option>Cybersecurity</option>
+          </select>
+          <select
+            class="flex-1 rounded-md border-gray-300 shadow-sm p-2 focus:border-indigo-500 focus:ring-indigo-500 border"
+          >
+            <option>All Experience Levels</option>
+            <option>0-3 years</option>
+            <option>4-7 years</option>
+            <option>8+ years</option>
+          </select>
+          <button
+            class="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-indigo-700 whitespace-nowrap"
+          >
+            Search
+          </button>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Alumni Card 1 -->
+          <div class="bg-white border border-gray-100 rounded-lg shadow-sm overflow-hidden">
+            <div class="p-6">
+              <div class="flex items-center">
+                <img
+                  src="./images/sarah.png"
+                  alt="Sarah Chen"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <div class="ml-4">
+                  <h4 class="text-lg font-medium text-gray-900">Sarah Chen</h4>
+                  <p class="text-gray-500">Senior Software Engineer at TechCorp</p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 text-xs font-medium">
+                  Available
+                </span>
+                <p class="mt-2 text-sm text-gray-600">
+                  Specializes in frontend development and technical interviews. Happy to discuss career growth.
+                </p>
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="text-xs text-gray-500">Class of 2015</span>
+                <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+                  Connect
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Alumni Card 2 -->
+          <div class="bg-white border border-gray-100 rounded-lg shadow-sm overflow-hidden">
+            <div class="p-6">
+              <div class="flex items-center">
+                <img
+                  src="./images/michael.png"
+                  alt="Michael Rodriguez"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <div class="ml-4">
+                  <h4 class="text-lg font-medium text-gray-900">Michael Rodriguez</h4>
+                  <p class="text-gray-500">Cybersecurity Lead at SecureNet</p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 text-xs font-medium">
+                  Available
+                </span>
+                <p class="mt-2 text-sm text-gray-600">
+                  Focused on security architecture and risk assessment. Can advise on security certifications.
+                </p>
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="text-xs text-gray-500">Class of 2012</span>
+                <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+                  Connect
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Alumni Card 3 -->
+          <div class="bg-white border border-gray-100 rounded-lg shadow-sm overflow-hidden">
+            <div class="p-6">
+              <div class="flex items-center">
+                <img
+                  src="./images/priya.png"
+                  alt="Priya Patel"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <div class="ml-4">
+                  <h4 class="text-lg font-medium text-gray-900">Priya Patel</h4>
+                  <p class="text-gray-500">Data Science Manager at Analytix</p>
+                </div>
+              </div>
+              <div class="mt-4">
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-gray-100 text-gray-800 text-xs font-medium">
+                  Away
+                </span>
+                <p class="mt-2 text-sm text-gray-600">
+                  Machine learning specialist. Happy to review projects and discuss AI applications.
+                </p>
+              </div>
+              <div class="mt-4 flex justify-between items-center">
+                <span class="text-xs text-gray-500">Class of 2018</span>
+                <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+                  Connect
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 text-center">
+          <button class="bg-white text-indigo-600 px-4 py-2 rounded-md border border-indigo-600 text-sm font-medium hover:bg-indigo-50">
+            View All Alumni (1,284)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentorship Section -->
+  <div id="mentorship" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center">
+        Smart Mentorship Matching
+      </h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto text-center">
+        Our AI-powered system suggests the best mentor matches based on your goals and interests.
+      </p>
+      <div class="mt-12 grid lg:grid-cols-2 gap-8">
+        <!-- Form Side -->
+        <div>
+          <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+            <form>
+              <div class="space-y-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700">
+                    Your Career Interest
+                  </label>
+                  <select
+                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2"
+                  >
+                    <option>Software Development</option>
+                    <option>Data Science</option>
+                    <option>Product Management</option>
+                    <option>UX/UI Design</option>
+                    <option>DevOps</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700">
+                    Specific Technologies
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="e.g., React, Python, AWS"
+                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700">
+                    Mentorship Goals
+                  </label>
+                  <select multiple class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2">
+                    <option>Career Growth</option>
+                    <option>Technical Skills</option>
+                    <option>Interview Preparation</option>
+                    <option>Networking</option>
+                    <option>Project Feedback</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700">
+                    Preferred Meeting Frequency
+                  </label>
+                  <select
+                    class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring-indigo-500 p-2"
+                  >
+                    <option>Weekly</option>
+                    <option>Bi-weekly</option>
+                    <option>Monthly</option>
+                    <option>As needed</option>
+                  </select>
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="w-full bg-indigo-600 text-white py-2 rounded-md font-medium hover:bg-indigo-700"
+                  >
+                    Find Matches
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Matches Side -->
+        <div>
+          <div class="bg-white p-6 border border-gray-200 rounded-lg shadow-sm space-y-4">
+            <!-- Match #1 -->
+            <div class="flex items-start p-3 hover:bg-gray-50 rounded-md cursor-pointer mentor-card transition-all duration-150 ease-in-out">
+              <img
+                src="./images/alex.png"
+                alt="Alex Wong"
+                class="h-12 w-12 rounded-full"
+              />
+              <div class="ml-4 flex-1">
+                <h4 class="text-sm font-medium text-gray-900">
+                  Alex Wong
+                  <span class="ml-2 inline-flex bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                    95% Match
+                  </span>
+                </h4>
+                <p class="text-sm text-gray-500">Lead Developer at CodeCraft</p>
+                <div class="mt-1 flex flex-wrap gap-1">  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">React</span>  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Career Advice</span>  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">Interview Prep</span>  
+                </div>
+                <div class="mt-2 text-right">
+                  <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+                    Request Session
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Match #2 -->
+            <div class="flex items-start p-3 hover:bg-gray-50 rounded-md cursor-pointer mentor-card transition-all duration-150 ease-in-out">
+              <img
+                src="./images/jordan.png"
+                alt="Jordan Smith"
+                class="h-12 w-12 rounded-full"
+              />
+              <div class="ml-4 flex-1">
+                <h4 class="text-sm font-medium text-gray-900">
+                  Jordan Smith
+                  <span class="ml-2 inline-flex bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                    87% Match
+                  </span>
+                </h4>
+                <p class="text-sm text-gray-500">Senior Product Manager at BuildTech</p>
+                <div class="mt-1 flex flex-wrap gap-1">  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">Product Strategy</span>  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">Roadmapping</span>  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">User Research</span>  
+                </div>
+                <div class="mt-2 text-right">
+                  <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+                    Request Session
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Match #3 -->
+            <div class="flex items-start p-3 hover:bg-gray-50 rounded-md cursor-pointer mentor-card transition-all duration-150 ease-in-out">
+              <img
+                src="./images/taylor.png"
+                alt="Taylor Kim"
+                class="h-12 w-12 rounded-full"
+              />
+              <div class="ml-4 flex-1">
+                <h4 class="text-sm font-medium text-gray-900">
+                  Taylor Kim
+                  <span class="ml-2 inline-flex bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">
+                    82% Match
+                  </span>
+                </h4>
+                <p class="text-sm text-gray-500">Data Science Lead at AnalyticsPro</p>
+                <div class="mt-1 flex flex-wrap gap-1">  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">Machine Learning</span>  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">Python</span>  
+                  <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-yellow-100 text-yellow-800">Model Deployment</span>  
+                </div>
+                <div class="mt-2 text-right">
+                  <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">
+                    Request Session
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Opportunities Section -->
+  <div id="opportunities" class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center">Career Opportunities</h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto text-center">Exclusive jobs and internships shared by our alumni network.</p>
+      <div class="mt-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <button class="border-b-2 border-indigo-500 text-indigo-600 px-1 pt-1 pb-2 text-sm font-medium">All Opportunities</button>
+          <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 px-1 pt-1 pb-2 text-sm font-medium">Jobs (43)</button>
+          <button class="border-b-2 border-transparent text-gray-500 hover:text-gray-700 px-1 pt-1 pb-2 text-sm font-medium">Internships (17)</button>
+        </div>
+        <div class="grid grid-cols-1 gap-6">
+          <!-- Job 1 -->
+          <div class="bg-white rounded-lg shadow job-card transition-all duration-150 ease-in-out overflow-hidden">
+            <div class="px-6 py-4">  
+              <div class="flex items-start">  
+                <img src="./images/innovatech.png" alt="Innovatech" class="h-12 w-12 rounded" />  
+                <div class="ml-4 flex-1">  
+                  <div class="flex items-center justify-between">  
+                    <h3 class="text-lg font-medium text-indigo-600">Frontend Developer</h3>  
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 text-xs font-medium">New</span>  
+                  </div>  
+                  <p class="mt-1 text-sm text-gray-500">Innovatech • San Francisco, CA • Posted by Amanda L. (Alumni '16')</p>  
+                  <div class="mt-2 flex flex-wrap gap-2">  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">React</span>  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">TypeScript</span>  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-blue-100 text-blue-800">CSS</span>  
+                  </div>  
+                </div>  
+              </div>  
+              <div class="mt-4 flex items-center justify-between">  
+                <p class="text-sm text-gray-500">Apply by August 15, 2023 • 3 applicants from BondEd</p>  
+                <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">View Details</button>  
+              </div>  
+            </div>
+          </div>
+          <!-- Job 2 -->
+          <div class="bg-white rounded-lg shadow job-card transition-all duration-150 ease-in-out overflow-hidden">
+            <div class="px-6 py-4">  
+              <div class="flex items-start">  
+                <img src="./images/datadyn.png" alt="DataDyn" class="h-12 w-12 rounded" />  
+                <div class="ml-4 flex-1">  
+                  <div class="flex items-center justify-between">  
+                    <h3 class="text-lg font-medium text-indigo-600">Data Science Intern</h3>  
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-yellow-100 text-yellow-800 text-xs font-medium">Alumni Favorite</span>  
+                  </div>  
+                  <p class="mt-1 text-sm text-gray-500">DataDyn • Remote • Posted by Raj P. (Alumni '13')</p>  
+                  <div class="mt-2 flex flex-wrap gap-2">  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">Python</span>  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">Pandas</span>  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-purple-100 text-purple-800">SQL</span>  
+                  </div>  
+                </div>  
+              </div>  
+              <div class="mt-4 flex items-center justify-between">  
+                <p class="text-sm text-gray-500">Apply by July 30, 2023 • 12 applicants from BondEd</p>  
+                <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">View Details</button>  
+              </div>  
+            </div>
+          </div>
+          <!-- Job 3 -->
+          <div class="bg-white rounded-lg shadow job-card transition-all duration-150 ease-in-out overflow-hidden">
+            <div class="px-6 py-4">  
+              <div class="flex items-start">  
+                <img src="./images/cloudscale.png" alt="CloudScale" class="h-12 w-12 rounded" />  
+                <div class="ml-4 flex-1">  
+                  <div class="flex items-center justify-between">  
+                    <h3 class="text-lg font-medium text-indigo-600">DevOps Engineer</h3>  
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-xs font-medium">Fast-track</span>  
+                  </div>  
+                  <p class="mt-1 text-sm text-gray-500">CloudScale • Austin, TX • Posted by Maria G. (Alumni '10')</p>  
+                  <div class="mt-2 flex flex-wrap gap-2">  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">AWS</span>  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">Kubernetes</span>  
+                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-green-100 text-green-800">Terraform</span>  
+                  </div>  
+                </div>  
+              </div>  
+              <div class="mt-4 flex items-center justify-between">  
+                <p class="text-sm text-gray-500">Apply by September 1, 2023 • 5 applicants from BondEd</p>  
+                <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">View Details</button>  
+              </div>  
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 text-center">
+          <button class="bg-white text-indigo-600 px-4 py-2 rounded-md border border-indigo-600 text-sm font-medium hover:bg-indigo-50">
+            View All Opportunities (60+)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Community Section -->
+  <div class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center">Tech Community</h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto text-center">
+        Join conversations, share knowledge, and collaborate with your peers.
+      </p>
+      <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Forum 1 -->
+        <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden forum-card transition-all duration-150 ease-in-out">
+          <img
+            class="w-full h-32 object-cover"
+            src="./images/forum1.png"
+            alt="React best practices"
+          />
+          <div class="p-6">
+            <div class="flex items-center">
+              <img
+                class="h-10 w-10 rounded-full"
+                src="./images/jamal.png"
+                alt="Jamal Wilson"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-900">Jamal Wilson</p>
+                <p class="text-sm text-gray-500">Software Architect at CodeCraft</p>
+              </div>
+            </div>
+            <h3 class="mt-4 text-lg font-medium text-gray-900">React 18 Best Practices</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              Let's discuss the newest patterns and anti-patterns for React 18, including concurrent rendering and the new hooks.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-xs text-gray-500">42 comments • Last post 2h ago</span>
+              <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Join Discussion</button>
+            </div>
+          </div>
+        </div>
+        <!-- Forum 2 -->
+        <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden forum-card transition-all duration-150 ease-in-out">
+          <img
+            class="w-full h-32 object-cover"
+            src="./images/forum2.png"
+            alt="Cleaning messy data"
+          />
+          <div class="p-6">
+            <div class="flex items-center">
+              <img
+                class="h-10 w-10 rounded-full"
+                src="./images/wei.png"
+                alt="Dr. Wei Zhang"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-900">Dr. Wei Zhang</p>
+                <p class="text-sm text-gray-500">Professor of Data Science</p>
+              </div>
+            </div>
+            <h3 class="mt-4 text-lg font-medium text-gray-900">Cleaning Messy Data</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              Share your favorite techniques for dealing with real-world dirty datasets. Case studies welcome!
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-xs text-gray-500">29 comments • Last post 1d ago</span>
+              <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Join Discussion</button>
+            </div>
+          </div>
+        </div>
+        <!-- Forum 3 -->
+        <div class="bg-gray-50 rounded-lg shadow-sm overflow-hidden forum-card transition-all duration-150 ease-in-out">
+          <img
+            class="w-full h-32 object-cover"
+            src="./images/forum3.png"
+            alt="Tech leadership"
+          />
+          <div class="p-6">
+            <div class="flex items-center">
+              <img
+                class="h-10 w-10 rounded-full"
+                src="./images/elena.png"
+                alt="Elena Rodriguez"
+              />
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-900">Elena Rodriguez</p>
+                <p class="text-sm text-gray-500">CTO at StartupScale</p>
+              </div>
+            </div>
+            <h3 class="mt-4 text-lg font-medium text-gray-900">Transition to Tech Leadership</h3>
+            <p class="mt-2 text-sm text-gray-600">
+              My journey from senior engineer to CTO in 3 years - what worked, what didn't, and lessons learned.
+            </p>
+            <div class="mt-4 flex justify-between items-center">
+              <span class="text-xs text-gray-500">76 comments • Last post 5h ago</span>
+              <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Join Discussion</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <button class="bg-white text-indigo-600 px-4 py-2 rounded-md border border-indigo-600 text-sm font-medium hover:bg-indigo-50">
+          Browse All Discussions (200+)
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Events Section -->
+  <div class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center">Upcoming Events</h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto text-center">Webinars, tech talks, reunions, and networking opportunities.</p>
+      <div class="mt-12 grid lg:grid-cols-2 gap-8">
+        <!-- Calendar -->
+        <div class="bg-white rounded-lg shadow overflow-hidden">
+          <div class="p-6">
+            <div class="flex justify-between items-start">
+              <h3 class="text-xl font-bold text-gray-900">July Calendar</h3>
+              <div class="flex space-x-1">
+                <button class="p-1 rounded-full bg-gray-100 hover:bg-gray-200">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="p-1 rounded-full bg-gray-100 hover:bg-gray-200">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-7 gap-1 text-xs text-center text-gray-500">
+              <div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div>
+            </div>
+            <div class="mt-2 grid grid-cols-7 gap-1 text-sm text-center">
+              <!-- 25-31 prev -->
+              <div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div><div class="calendar-day event-day">1</div>
+              <!-- 2-8 -->
+              <div class="calendar-day">2</div><div class="calendar-day">3</div><div class="calendar-day event-day">4</div><div class="calendar-day">5</div><div class="calendar-day">6</div><div class="calendar-day event-day">7</div><div class="calendar-day">8</div>
+              <!-- and so forth through 31 -->
+            </div>
+            <div class="mt-4 border-t border-gray-200 pt-4">
+              <h4 class="text-sm font-medium text-gray-900">Key</h4>
+              <div class="mt-2 flex items-center">
+                <span class="h-2.5 w-2.5 rounded-full bg-green-400 mr-2"></span><span class="text-sm text-gray-500">Alumni Event</span>
+              </div>
+              <div class="mt-2 flex items-center">
+                <span class="h-2.5 w-2.5 rounded-full bg-blue-400 mr-2"></span><span class="text-sm text-gray-500">Professional Development</span>
+              </div>
+              <div class="mt-2 flex items-center">
+                <span class="h-2.5 w-2.5 rounded-full bg-purple-400 mr-2"></span><span class="text-sm text-gray-500">Technical Workshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Featured Events -->
+        <div>
+          <h3 class="text-lg font-medium text-gray-900 mb-4">Featured Events</h3>
+          <div class="space-y-4">
+            <!-- Event 1 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <div class="px-4 py-5 sm:px-6 flex justify-between items-center">
+                <div>
+                  <h4 class="text-base font-medium text-indigo-600">From Student to Staff Engineer in 5 Years</h4>
+                  <p class="mt-1 text-sm text-gray-500">Webinar with Lisa T. (Alumni '16), Staff Engineer at MegaTech</p>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 text-xs font-medium">Tomorrow</span>
+              </div>
+              <div class="border-t border-gray-200 px-4 py-4 sm:px-6">
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center">
+                    <i class="far fa-calendar text-gray-400 mr-2"></i><span class="text-sm text-gray-500">July 18, 2023 • 5:30 PM PT</span>
+                  </div>
+                  <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Register</button>
+                </div>
+              </div>
+            </div>
+            <!-- Event 2 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <div class="px-4 py-5 sm:px-6 flex justify-between items-center">
+                <div>
+                  <h4 class="text-base font-medium text-indigo-600">Class of 2013 10-Year Reunion</h4>
+                  <p class="mt-1 text-sm text-gray-500">Campus reunion and networking mixer</p>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 text-xs font-medium">Next Week</span>
+              </div>
+              <div class="border-t border-gray-200 px-4 py-4 sm:px-6">
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center">
+                    <i class="far fa-calendar text-gray-400 mr-2"></i><span class="text-sm text-gray-500">July 22, 2023 • 6:00 PM PT</span>
+                  </div>
+                  <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Register</button>
+                </div>
+              </div>
+            </div>
+            <!-- Event 3 -->
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+              <div class="px-4 py-5 sm:px-6 flex justify-between items-center">
+                <div>
+                  <h4 class="text-base font-medium text-indigo-600">AWS Certification Study Group</h4>
+                  <p class="mt-1 text-sm text-gray-500">Led by certified alumni mentors</p>
+                </div>
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-purple-100 text-purple-800 text-xs font-medium">Weekly</span>
+              </div>
+              <div class="border-t border-gray-200 px-4 py-4 sm:px-6">
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center">
+                    <i class="far fa-calendar text-gray-400 mr-2"></i><span class="text-sm text-gray-500">Every Wednesday • 4:00 PM PT</span>
+                  </div>
+                  <button class="text-indigo-600 hover:text-indigo-900 text-sm font-medium">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6">
+            <button class="w-full bg-white text-indigo-600 px-4 py-2 rounded-md border border-indigo-600 text-sm font-medium hover:bg-indigo-50">
+              View All Upcoming Events
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl text-center">Success Stories</h2>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto text-center">
+        See how BondEd has made a difference for our community members.
+      </p>
+      <div class="mt-16 grid lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="flex items-center">
+            <img src="./images/david.png" alt="David Kim" class="h-12 w-12 rounded-full" />
+            <div class="ml-4">
+              <h4 class="text-lg font-medium text-gray-900">David Kim</h4>
+              <p class="text-gray-500">New Grad @ StreamTech</p>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 italic">
+            “Through BondEd, I connected with an alumni mentor who helped me prepare for technical interviews. They referred me to their company, and now I'm starting my dream job after graduation. The mock interviews were invaluable!”
+          </p>
+          <div class="mt-6 flex space-x-1 text-yellow-400">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="flex items-center">
+            <img src="./images/jessica.png" alt="Jessica Moore" class="h-12 w-12 rounded-full" />
+            <div class="ml-4">
+              <h4 class="text-lg font-medium text-gray-900">Jessica Moore</h4>
+              <p class="text-gray-500">Senior Developer @ CloudNine</p>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 italic">
+            “As an alum, I've found mentoring students incredibly rewarding. BondEd makes it easy to give back while expanding my professional network. I've even found new team members through the platform's job postings.”
+          </p>
+          <div class="mt-6 flex space-x-1 text-yellow-400">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="bg-gray-50 p-8 rounded-lg">
+          <div class="flex items-center">
+            <img src="./images/alex_w.png" alt="Alex Wong" class="h-12 w-12 rounded-full" />
+            <div class="ml-4">
+              <h4 class="text-lg font-medium text-gray-900">Alex Wong</h4>
+              <p class="text-gray-500">Director of Engineering @ DeepMind</p>
+            </div>
+          </div>
+          <p class="mt-4 text-gray-600 italic">
+            “The technical forums on BondEd have become my go-to resource for solving challenging problems. The platform connects me with brilliant minds across generations—something no other professional network offers.”
+          </p>
+          <div class="mt-6 flex space-x-1 text-yellow-400">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="gradient-bg text-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-extrabold sm:text-4xl">
+        Ready to join our community?
+      </h2>
+      <p class="mt-4 max-w-2xl mx-auto text-xl">
+        Whether you're a student looking for guidance or an alum wanting to give back, BondEd connects you with the right people.
+      </p>
+      <div class="mt-8 space-x-3">
+        <a
+          href="#"
+          class="inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-gray-50"
+        >
+          Get Started
+        </a>
+        <a
+          href="#"
+          class="inline-flex items-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-200 bg-indigo-700 hover:bg-indigo-800"
+        >
+          Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 uppercase">Platform</h3>
+          <div class="mt-4 space-y-4">
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Features</a>
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Pricing</a>
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Success Stories</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 uppercase">Resources</h3>
+          <div class="mt-4 space-y-4">
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Help Center</a>
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Community</a>
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Guides</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 uppercase">Company</h3>
+          <div class="mt-4 space-y-4">
+            <a href="#" class="block text-base text-gray-300 hover:text-white">About</a>
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Careers</a>
+            <a href="#" class="block text-base text-gray-300 hover:text-white">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-sm font-semibold text-gray-400 uppercase">Connect</h3>
+          <div class="mt-4 flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-lg"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-lg"></i></a>
+            <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in text-lg"></i></a>
+          </div>
+          <p class="mt-6 text-sm text-gray-400">© 2023 BondEd. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "bonded",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "tailwindcss -i src/css/style.css -o public/output.css",
+    "start": "live-server src"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.0",
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0"
+  }
+}
