@@ -31,6 +31,7 @@ function buildCorsOptions() {
 	};
 }
 
+app.set('trust proxy', 1);
 app.use(cors(buildCorsOptions()));
 app.use(express.json());
 
