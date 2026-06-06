@@ -33,6 +33,13 @@ function buildCorsOptions() {
 
 app.use(cors(buildCorsOptions()));
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Bonded API is running successfully'
+  });
+});
+
 app.use('/api', healthRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/profile', profileRoutes);
