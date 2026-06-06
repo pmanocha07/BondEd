@@ -27,6 +27,7 @@ function errorHandler(error, req, res, next) {
     return sendError(res, 403, error.message);
   }
 
+  console.error('[unhandled error]', error);
   return sendError(res, 500, 'Internal server error');
 }
 
