@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3001/api';
+const API_BASE = 'https://bonded-eug1.onrender.com/api';
 const STORAGE_KEY = 'bonded-auth';
 
 function getSession() {
