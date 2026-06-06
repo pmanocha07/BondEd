@@ -19,7 +19,7 @@ function clearSession() {
 
 function redirectByRole(user) {
   if (!user) {
-    window.location.replace('index.html');
+    window.location.replace('login.html');
     return;
   }
 
@@ -96,7 +96,7 @@ function bindLogout() {
   document.querySelectorAll('[data-logout]').forEach((button) => {
     button.addEventListener('click', () => {
       clearSession();
-      window.location.replace('index.html');
+      window.location.replace('login.html');
     });
   });
 }
@@ -116,7 +116,7 @@ async function ensureSession() {
   const session = getSession();
 
   if (!session?.token) {
-    window.location.replace('index.html');
+    window.location.replace('login.html');
     return null;
   }
 
@@ -131,7 +131,7 @@ async function ensureSession() {
     return resolved;
   } catch {
     clearSession();
-    window.location.replace('index.html');
+    window.location.replace('login.html');
     return null;
   }
 }
