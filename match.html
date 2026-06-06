@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BondEd | Browse Matches</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="match">
+  <header class="topbar">
+    <a class="wordmark" href="match.html">BondEd</a>
+    <nav class="topnav">
+      <a href="profile.html">Profile</a>
+      <a href="match.html" class="active" data-student-only>Browse</a>
+    </nav>
+    <button class="ghost-button" type="button" data-logout>Logout</button>
+  </header>
+
+  <main class="content-shell">
+    <section class="page-head split-head">
+      <div>
+        <p class="eyebrow">Matches</p>
+        <h1>Ranked alumni matches for you.</h1>
+        <p>Search by domain and graduation year range, then send connection requests from the cards below.</p>
+      </div>
+      <div class="status-chip" data-user-status></div>
+    </section>
+
+    <section class="card filter-card">
+      <form id="match-filters" class="filters-row">
+        <label>
+          Domain
+          <input type="text" name="domain" placeholder="Optional">
+        </label>
+        <label>
+          Min year
+          <input type="number" name="minYear" min="1900" max="2100" placeholder="Optional">
+        </label>
+        <label>
+          Max year
+          <input type="number" name="maxYear" min="1900" max="2100" placeholder="Optional">
+        </label>
+        <button type="submit" class="primary-button">Filter</button>
+      </form>
+    </section>
+
+    <section>
+      <div class="results-header">
+        <p id="match-summary">Loading matches...</p>
+      </div>
+      <div id="match-grid" class="grid-list"></div>
+    </section>
+  </main>
+
+  <template id="match-card-template">
+    <article class="card match-card">
+      <div class="match-card-top">
+        <div>
+          <p class="card-kicker"></p>
+          <h3></h3>
+        </div>
+        <div class="score-pill"></div>
+      </div>
+      <p class="match-bio"></p>
+      <div class="match-tags"></div>
+      <div class="match-actions">
+        <button class="primary-button connect-button" type="button">Connect</button>
+        <span class="request-status"></span>
+      </div>
+    </article>
+  </template>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

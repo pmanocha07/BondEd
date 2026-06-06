@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BondEd | Sign Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="signup">
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <main class="screen-shell auth-screen wide-screen">
+    <section class="brand-panel">
+      <p class="eyebrow">BondEd</p>
+      <h1>Set up your profile in one pass.</h1>
+      <p class="lead">Students and alumni can join with the same clean flow. Alumni add company and job title.</p>
+      <div class="panel-note">
+        <span>Already have an account?</span>
+        <a href="index.html">Log in</a>
+      </div>
+    </section>
+
+    <section class="card auth-card form-card">
+      <div class="card-header">
+        <h2>Create account</h2>
+        <p>We’ll create your user and profile together.</p>
+      </div>
+      <form id="signup-form" class="two-column-form">
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" placeholder="At least 8 characters" required>
+        </label>
+        <label>
+          Role
+          <select name="role" required>
+            <option value="student">Student</option>
+            <option value="alumni">Alumni</option>
+          </select>
+        </label>
+        <label>
+          Full name
+          <input type="text" name="fullName" placeholder="Jordan Lee" required>
+        </label>
+        <label>
+          Graduation year
+          <input type="number" name="gradYear" min="1900" max="2100" placeholder="2027" required>
+        </label>
+        <label>
+          Domain
+          <input type="text" name="domain" placeholder="Computer Science" required>
+        </label>
+        <label class="span-2">
+          Interests
+          <input type="text" name="interests" placeholder="AI, design, startups" required>
+        </label>
+        <label class="span-2">
+          Bio
+          <textarea name="bio" rows="4" placeholder="Short intro about your background and goals" required></textarea>
+        </label>
+        <div class="span-2 alumni-fields" data-alumni-only>
+          <label>
+            Company
+            <input type="text" name="company" placeholder="Acme Inc.">
+          </label>
+          <label>
+            Job title
+            <input type="text" name="jobTitle" placeholder="Product Manager">
+          </label>
+        </div>
+        <button type="submit" class="primary-button span-2">Create account</button>
+        <p class="form-message span-2" data-form-message></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

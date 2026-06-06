@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BondEd: Where Experience Meets Ambition</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BondEd | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="font-sans bg-gray-50">
-    <!-- Header -->
-    <div id="header"></div>
+<body data-page="login">
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <main class="screen-shell auth-screen">
+    <section class="brand-panel">
+      <p class="eyebrow">BondEd</p>
+      <h1>Mentorship and networking, without the clutter.</h1>
+      <p class="lead">Log in to manage your profile, browse ranked alumni matches, and send connection requests.</p>
+      <div class="panel-note">
+        <span>New here?</span>
+        <a href="signup.html">Create an account</a>
+      </div>
+    </section>
 
-    <!-- Hero Section -->
-    <div id="hero"></div>
+    <section class="card auth-card">
+      <div class="card-header">
+        <h2>Log in</h2>
+        <p>Use your email and password to continue.</p>
+      </div>
+      <form id="login-form" class="stack-form">
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Password
+          <input type="password" name="password" placeholder="Your password" required>
+        </label>
+        <button type="submit" class="primary-button">Continue</button>
+        <p class="form-message" data-form-message></p>
+      </form>
+    </section>
+  </main>
 
-    <!-- Features Section -->
-    <div id="features"></div>
-
-    <!-- Alumni Directory Preview -->
-    <div id="directory"></div>
-
-    <!-- Mentorship Section -->
-    <div id="mentorship"></div>
-
-    <!-- Opportunities Section -->
-    <div id="opportunities"></div>
-
-    <!-- Community Section -->
-    <div id="community"></div>
-
-    <!-- Events Section -->
-    <div id="events"></div>
-
-    <!-- Testimonials -->
-    <div id="testimonials"></div>
-
-    <!-- Call to Action -->
-    <div id="cta"></div>
-
-    <!-- Footer -->
-    <div id="footer"></div>
-
-    <script src="js/scripts.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

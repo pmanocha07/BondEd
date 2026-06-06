@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "scripts": {
     "build:css": "tailwindcss -i src/css/style.css -o public/output.css",
-    "start": "live-server src"
+    "start": "live-server .",
+    "dev": "live-server ."
   },
   "devDependencies": {
     "autoprefixer": "^10.0.0",
+    "live-server": "^1.2.2",
     "tailwindcss": "^3.0.0",
     "postcss": "^8.0.0"
   }

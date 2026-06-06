@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BondEd | Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="profile">
+  <header class="topbar">
+    <a class="wordmark" href="profile.html">BondEd</a>
+    <nav class="topnav">
+      <a href="profile.html" class="active">Profile</a>
+      <a href="match.html" data-student-only data-hidden>Browse</a>
+    </nav>
+    <button class="ghost-button" type="button" data-logout>Logout</button>
+  </header>
+
+  <main class="content-shell">
+    <section class="page-head split-head">
+      <div>
+        <p class="eyebrow">Profile setup</p>
+        <h1>Keep your profile current.</h1>
+        <p>Students and alumni share the same core profile fields. Alumni add company and job title.</p>
+      </div>
+      <div class="status-chip" data-user-status></div>
+    </section>
+
+    <section class="card form-card">
+      <form id="profile-form" class="two-column-form">
+        <label>
+          Full name
+          <input type="text" name="fullName" required>
+        </label>
+        <label>
+          Graduation year
+          <input type="number" name="gradYear" min="1900" max="2100" required>
+        </label>
+        <label>
+          Domain
+          <input type="text" name="domain" required>
+        </label>
+        <label>
+          Interests
+          <input type="text" name="interests" placeholder="AI, design, product" required>
+        </label>
+        <label class="span-2">
+          Bio
+          <textarea name="bio" rows="4" required></textarea>
+        </label>
+        <div class="span-2 alumni-fields" data-alumni-only>
+          <label>
+            Company
+            <input type="text" name="company" placeholder="Company name">
+          </label>
+          <label>
+            Job title
+            <input type="text" name="jobTitle" placeholder="Title">
+          </label>
+        </div>
+        <button type="submit" class="primary-button span-2">Save profile</button>
+        <p class="form-message span-2" data-form-message></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
